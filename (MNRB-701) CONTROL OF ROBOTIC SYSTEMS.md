@@ -39,6 +39,7 @@ Input u(t) → System G(s) → Output y(t)
 ---
 
 ### 2️⃣ Frequency Response (IMP)
+frequency response is a quantitative measure of how a system reacts to input signals across different frequencies. It typically consists of two components: magnitude (how the signal's volume or strength changes) and phase (how the signal's timing is shifted).
 
 * Describes system response to **sinusoidal inputs** of different frequencies.
 * Shows **amplitude ratio** and **phase shift**.
@@ -61,6 +62,8 @@ Sine Input → System → Sine Output (Gain & Phase Shift)
 ---
 
 ### 3️⃣ Routh–Hurwitz Test & Relative Stability
+
+The Routh–Hurwitz stability criterion is a mathematical test used in control systems to determine the stability of a linear time-invariant (LTI) system without solving for its poles. While primarily used for absolute stability, it can be adapted to analyze relative stability.
 
 * Determines system stability **without solving roots**.
 * Construct the **Routh array** from the characteristic equation.
@@ -88,6 +91,8 @@ Characteristic Equation → Routh Array → Stability Decision
 ---
 
 ### 4️⃣ Root Locus & Design
+
+the Root Locus is a graphical technique used to analyze how the roots (poles) of a system's characteristic equation move in the complex s-plane as a system parameter, typically the gain $(K)$, varies from zero to infinity
 
 * Graphical technique showing how **closed-loop poles** move as gain $K$ varies.
 * Helps analyze stability and transient performance.
@@ -135,6 +140,13 @@ Reference → Compensator → Plant → Output
 ---
 
 ### 6️⃣ Bode, Polar & Nyquist Plots (IMP)
+
+## Bode Plots:
+Two separate semi-log plots (Magnitude in dB and Phase in degrees). Best for "loop shaping" and identifying Gain Margin (GM) and Phase Margin (PM) to ensure robustness.
+## Polar Plots:
+A single plot on a complex plane representing magnitude and phase as a vector. While visually simple, they are the foundation for the more comprehensive Nyquist plot. 
+## Nyquist plot:
+A Nyquist plot is a graphical tool in control engineering used to determine the absolute and relative stability of a system by plotting the complex transfer function \(G(j\omega )H(j\omega )\) on the complex plane. Unlike a polar plot, it covers the entire frequency range from \(-\infty \) to \(+\infty \). 
 
 * **Bode Plot:** Gain (dB) and phase vs frequency
 * **Polar Plot:** Frequency response in complex plane
