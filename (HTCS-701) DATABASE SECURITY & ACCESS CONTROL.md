@@ -548,7 +548,9 @@ ROM | EEPROM | RAM
 ## 5️⃣ Smart Card Files & File Management
 
 Smart Card file management is standardized by ISO/IEC 7816-4, organizing data into a tree structure managed by the card's operating system.
-1. **File Types Master File (MF):** The "Root" directory (Entry point).
+
+**1. File Types Master File (MF):** 
+The "Root" directory (Entry point).
 * Dedicated Files (DF): "Folders" that separate different apps (e.g., Banking vs. ID).
 * Elementary Files (EF): The "Files" holding actual data.
 
@@ -678,8 +680,9 @@ A comprehensive 2026 cloud audit typically focuses on four crucial elements:
 * Authentication: Verifying the identity of users and systems attempting to access resources.
 * Authorization: Determining if appropriate permissions (e.g., Role-Based Access Control) are correctly implemented.
 * Accountability: Ensuring user actions are tracked and recorded for incident investigation.
-* Auditability: Establishing clear audit trails through comprehensive logging and data retention policies. 
-Audit checks:
+* Auditability: Establishing clear audit trails through comprehensive logging and data retention policies.
+
+## Audit checks:
 
 * Data usage
 * Compliance
